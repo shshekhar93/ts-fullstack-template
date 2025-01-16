@@ -1,0 +1,46 @@
+{
+  "name": "ts-fullstack-template-client",
+  "version": "0.0.1",
+  "description": "Template for full stack application using typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --passWithNoTests",
+    "lint": "eslint --fix .",
+    "build": "webpack --mode production",
+    "dev": "webpack -w --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shshekhar93/ts-fullstack-template.git"
+  },
+  "author": "Shashi Shekhar <shshekhar93@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shshekhar93/ts-fullstack-template/issues"
+  },
+  "homepage": "https://github.com/shshekhar93/ts-fullstack-template#readme",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
+    "@eslint/js": "^9.18.0",
+    "@stylistic/eslint-plugin": "^2.13.0",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "babel-loader": "^9.2.1",
+    "eslint": "^9.18.0",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^15.14.0",
+    "html-webpack-plugin": "^5.6.3",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "ts-fullstack-template",
+  "version": "0.0.1",
+  "description": "Template for full stack application using typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "(cd server && npm run test) && (cd client && npm run test)",
+    "lint": "(cd server && npm run lint) && (cd client && npm run lint)",
+    "version-bump": "ts-node scripts/version-bump.ts",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shshekhar93/ts-fullstack-template.git"
+  },
+  "author": "Shashi Shekhar <shshekhar93@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shshekhar93/ts-fullstack-template/issues"
+  },
+  "homepage": "https://github.com/shshekhar93/ts-fullstack-template#readme",
+  "devDependencies": {
+    "@types/semver": "^7.5.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.1",
+    "semver": "^7.6.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
