@@ -2,7 +2,6 @@
   "name": "ts-fullstack-template",
   "version": "0.0.1",
   "description": "Template for full stack application using typescript",
-  "main": "index.js",
   "scripts": {
     "test": "(cd server && npm run test) && (cd client && npm run test)",
     "lint": "(cd server && npm run lint) && (cd client && npm run lint)",
@@ -26,5 +25,10 @@
     "semver": "^7.6.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@types/prompts": "^2.4.9",
+    "extract-zip": "^2.0.1",
+    "prompts": "^2.4.2"
   }
 }
