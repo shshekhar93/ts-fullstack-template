@@ -10,7 +10,7 @@ const filesToProcess = [
   './server/package.json',
 ];
 
-filesToProcess.forEach(file => {
+filesToProcess.forEach((file) => {
   const packageFile = JSON.parse(readFileSync(file, 'utf8'));
   packageFile.version = semverInc(packageFile.version, releaseType);
   writeFileSync(file, JSON.stringify(packageFile, null, 2));

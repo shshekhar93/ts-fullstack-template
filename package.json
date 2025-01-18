@@ -2,12 +2,18 @@
   "name": "ts-fullstack-template",
   "version": "0.0.1",
   "description": "Template for full stack application using typescript",
+  "bin": "dist/bootstrap/index.js",
   "scripts": {
     "test": "(cd server && npm run test) && (cd client && npm run test)",
-    "lint": "(cd server && npm run lint) && (cd client && npm run lint)",
+    "lint": "(eslint --fix .) && (cd server && npm run lint) && (cd client && npm run lint)",
+    "build": "(tsc --build) && (cd server && tsc --build) && (cd client && tsc --build)",
     "version-bump": "ts-node scripts/version-bump.ts",
-    "prepare": "husky"
+    "prepare": "husky",
+    "prepack": "tsc --build"
   },
+  "files": [
+    "dist/bootstrap/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shshekhar93/ts-fullstack-template.git"
@@ -19,12 +25,16 @@
   },
   "homepage": "https://github.com/shshekhar93/ts-fullstack-template#readme",
   "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@stylistic/eslint-plugin": "^2.13.0",
     "@types/semver": "^7.5.8",
+    "globals": "^15.14.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.1",
     "semver": "^7.6.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0"
   },
   "dependencies": {
     "@types/prompts": "^2.4.9",
