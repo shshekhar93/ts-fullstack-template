@@ -1,6 +1,6 @@
 {
   "name": "@shshekhar/tsfst-client",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Template for full stack application using typescript",
   "main": "index.js",
   "scripts": {
