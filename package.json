@@ -1,6 +1,6 @@
 {
   "name": "@shshekhar/tsfst",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Template for full stack application using typescript",
   "bin": "dist/bootstrap/index.js",
   "scripts": {
