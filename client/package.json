@@ -1,5 +1,5 @@
 {
-  "name": "ts-fullstack-template-client",
+  "name": "@shshekhar/tsfst-client",
   "version": "0.0.1",
   "description": "Template for full stack application using typescript",
   "main": "index.js",

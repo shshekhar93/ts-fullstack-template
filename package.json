@@ -1,5 +1,5 @@
 {
-  "name": "ts-fullstack-template",
+  "name": "@shshekhar/tsfst",
   "version": "0.0.1",
   "description": "Template for full stack application using typescript",
   "bin": "dist/bootstrap/index.js",
@@ -9,7 +9,8 @@
     "build": "(tsc --build) && (cd server && tsc --build) && (cd client && tsc --build)",
     "version-bump": "ts-node scripts/version-bump.ts",
     "prepare": "husky",
-    "prepack": "tsc --build"
+    "prepack": "tsc --build",
+    "postinstall": "(cd server && npm install) && (cd client && npm install)"
   },
   "files": [
     "dist/bootstrap/**/*"
