@@ -1,6 +1,6 @@
 {
   "name": "@shshekhar/tsfst",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Template for full stack application using typescript",
   "bin": "dist/bootstrap/index.js",
   "scripts": {
@@ -9,8 +9,7 @@
     "build": "(tsc --build) && (cd server && tsc --build) && (cd client && tsc --build)",
     "version-bump": "ts-node scripts/version-bump.ts",
     "prepare": "husky",
-    "prepack": "tsc --build",
-    "postinstall": "(cd server && npm install) && (cd client && npm install)"
+    "prepack": "tsc --build"
   },
   "files": [
     "dist/bootstrap/**/*"
@@ -27,6 +26,8 @@
   "homepage": "https://github.com/shshekhar93/ts-fullstack-template#readme",
   "devDependencies": {
     "@eslint/js": "^9.18.0",
+    "@shshekhar/tsfst-client": "file:client",
+    "@shshekhar/tsfst-server": "file:server",
     "@stylistic/eslint-plugin": "^2.13.0",
     "@types/semver": "^7.5.8",
     "globals": "^15.14.0",

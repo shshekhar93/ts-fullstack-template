@@ -57,5 +57,12 @@ export async function confirmClearWorkingDirectory() {
 }
 
 export async function projectPrompts() {
-  return await prompts(projectQuestions);
+  return new Promise<ProjectResponse>((resolve, reject) => {
+    const onCancel = () => {
+      reject(new Error('CANCELLED_BY_USER'));
+    };
+    prompts(projectQuestions, { onCancel })
+      .then(responses => resolve(responses))
+      .catch(e => reject(e));
+  });
 }

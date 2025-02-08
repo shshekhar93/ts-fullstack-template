@@ -61,10 +61,7 @@ async function deleteSetupFiles() {
 async function installDependencies() {
   actionStart('Installing dependencies...');
   const workDir = process.cwd();
-  for (const projectPath of ['', 'client', 'server']) {
-    const projectDir = join(workDir, projectPath);
-    await fromCb(cb => exec('npm install', { cwd: projectDir }, err => cb(null, err)));
-  }
+  await fromCb(cb => exec('npm install', { cwd: workDir }, err => cb(null, err)));
   actionComplete();
 }
 
